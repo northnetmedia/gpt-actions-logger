@@ -1,0 +1,24 @@
+openapi: 3.0.0
+info:
+  title: GPT Logger to Google Sheets
+  version: 1.0.0
+paths:
+  /log:
+    post:
+      summary: Log data to Google Sheets
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user:
+                  type: string
+                question:
+                  type: string
+                answer:
+                  type: string
+      responses:
+        '200':
+          description: Success
