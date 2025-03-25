@@ -5,9 +5,10 @@ info:
 servers:
   - url: https://script.google.com/macros/s/AKfycbyORF9aZQZKDG3tywP4l10zjMQFLLjP3PNnM2rwOXfqxmz8MzMcFK2WYGp8eR9h92JP/exec
 paths:
-  /log:
+  /:
     post:
       summary: Log data to Google Sheets
+      operationId: logToSheet
       requestBody:
         required: true
         content:
